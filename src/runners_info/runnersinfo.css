@@ -1,0 +1,116 @@
+.categories{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.runnersInfo-sect{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.runners-ph{
+    font-weight: 900;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.runners-ps{
+    font-weight: 400;
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.753);
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.category{
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+    gap: 70px
+}
+
+.category1{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    border-radius: 20px;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.274);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.308);
+}
+.category1:hover {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.527);
+}
+
+.km41{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    gap: 180px;
+}
+.km10{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    gap: 230px;
+}
+
+.p-41{
+    font-weight: 900;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+.p-E{
+    font-size: 11px;
+    color: rgb(255, 255, 255);
+    padding: 5px 10px 5px 10px;
+    background-color: rgb(255, 0, 76);
+    border-radius: 10px;
+    height: fit-content;
+}
+.p-I{
+    font-size: 11px;
+    color: rgb(255, 255, 255);
+    padding: 5px 10px 5px 10px;
+    background-color: rgb(255, 60, 0);
+    border-radius: 10px;
+    height: fit-content;
+}
+.p-B{
+    font-size: 11px;
+    color: rgb(255, 255, 255);
+    padding: 5px 10px 5px 10px;
+    background-color: rgb(49, 49, 49);
+    border-radius: 10px;
+    height: fit-content;
+}
+.p-V{
+    font-size: 11px;
+    color: rgb(0, 0, 0);
+    padding: 5px 10px 5px 10px;
+    background-color: rgba(255, 0, 76, 0);
+    border: 1px solid rgba(0, 0, 0, 0.671);
+    border-radius: 10px;
+    height: fit-content;
+}
+.p-requirements{
+    font-weight: 400;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.829);
+    margin-bottom: 0px;
+}
+.dot{
+    color: rgb(158, 49, 16);
+    font-size: 12px;
+}

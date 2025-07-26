@@ -1,0 +1,19 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" xmlns="http://www.w3.org/2000/svg">
+  <!-- Ribbon left -->
+  <path d="M18 4 L24 20" stroke="#1976D2" stroke-width="4" />
+  <!-- Ribbon right -->
+  <path d="M30 4 L24 20" stroke="#D32F2F" stroke-width="4" />
+  <!-- Medal circle with gradient -->
+  <defs>
+    <radialGradient id="gold" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF9C4"/>
+      <stop offset="60%" stop-color="#FFD700"/>
+      <stop offset="100%" stop-color="#C68642"/>
+    </radialGradient>
+  </defs>
+  <circle cx="24" cy="32" r="12" fill="url(#gold)" stroke="#C68642" stroke-width="2"/>
+  <!-- Medal inner highlight -->
+  <ellipse cx="24" cy="36" rx="5" ry="2" fill="#FFF9C4" opacity="0.5"/>
+  <!-- Medal star -->
+  <polygon points="24,26 25.8,30.2 30.4,30.2 26.8,32.8 28.6,37 24,34.2 19.4,37 21.2,32.8 17.6,30.2 22.2,30.2" fill="#FFF9C4" stroke="#FFD700" stroke-width="0.5"/>
+</svg>

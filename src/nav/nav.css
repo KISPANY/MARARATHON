@@ -1,0 +1,128 @@
+.logo{
+    width: 30px;
+    height: 30px;
+}
+
+.logo-text{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+}
+
+.nav-title {
+    background: linear-gradient(90deg, #885d01, #ff5100);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-family: 'space mono', monospace;
+    font-size: 15px;
+    font-weight: 900;
+}
+
+.nav-link {
+    display: flex;
+  flex-direction: row;
+    gap: 30px;
+}
+@media (max-width: 1260px){
+    .nav{
+        gap: 45vh;
+    }
+    .nav-link{
+        gap: 17px;
+        font-size: 5px;
+    }
+    .a-link {
+        font-size: 3px;
+        width: 100%;
+        white-space: nowrap;
+    }
+    .phone-menu {
+    display: none !important;
+    }
+}
+@media (max-width: 1200px){
+    .nav{
+        gap: 30vh;
+    }
+    .nav-link{
+        gap: 17px;
+        font-size: 5px;
+    }
+    .a-link {
+        font-size: 3px;
+        width: 100%;
+        white-space: nowrap;
+    }
+    .phone-menu {
+    display: none !important;
+    }
+}
+@media (max-width: 1160px){
+    .nav{
+        gap: 18vh;
+    }
+    .nav-link{
+        gap: 17px;
+        font-size: 5px;
+    }
+    .a-link {
+        font-size: 3px;
+        width: 100%;
+        white-space: nowrap;
+    }
+    .phone-menu {
+    display: none !important;
+    }
+}
+@media (max-width: 1000px){
+    .nav{
+        gap: 25vh;
+    }
+    .nav-link{
+        display: none;
+    }
+    .a-link {
+        display: none;
+    }
+}
+@media (max-width: 365px) {
+    .nav{
+        gap:5px;
+    }
+    .nav-link{
+        display: none;
+    }
+    .a-link {
+        display: none;
+    }
+    .nav-title{
+        font-size: 15px;
+        width: 140px;
+    }
+}
+
+.a-link {
+    text-decoration: none;
+    color: black;
+    font-family: 'space mono', monospace;
+    font-weight: 900;
+    font-size: 13px;
+    border-bottom: 1px solid black;
+    border-radius: 5px;
+    padding: 2px;
+}
+a:hover{
+    color: #ff5100;
+    box-shadow: 0 0 8px black;
+}
+
+.phone-menu {
+    display: none !important;
+}

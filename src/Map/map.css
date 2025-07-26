@@ -1,0 +1,69 @@
+.map-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px 0 20px 0 ;
+}
+
+.map-routed{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.274);
+    border-radius: 20px;
+    background-color: rgba(8, 1, 48, 0.8);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.527);
+    margin-top: 30px;
+}
+
+.p-routemap {
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.map{
+    background: linear-gradient(180deg, rgba(0, 14, 51, 0.767), rgba(75, 63, 36, 0.767));
+    backdrop-filter: blur(20px);
+    display: block;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: white;
+    font-size: 14px;
+}
+.map:hover, .map-lctn:hover{
+    box-shadow: none;
+}
+
+.map-lctn {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: block;
+    object-fit: cover;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.p-map{
+    margin-bottom: 0px;
+    margin-top: 25px;
+    color: white;
+    font-size: 19px;
+}
+
+@media (max-width: 1260px) {
+  .map-routed {
+    transform: scale(0.85);
+    transition: transform 0.3s;
+  }
+}
+
+@media (max-width: 600px) {
+  .map-routed {
+    transform: scale(0.8);
+  }
+}

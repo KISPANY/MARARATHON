@@ -1,0 +1,183 @@
+.route-sect {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.route-container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.288);
+    padding-bottom: 18px;
+    transition: transform 0.4s ease;
+}
+.route-container:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 0 11px rgba(0, 0, 0, 0.5);
+}
+
+.km {
+    background-color: rgba(14, 73, 9, 0.829);
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 20px;
+    border-top-left-radius: 19.5px;
+    border-top-right-radius: 19.5px;
+}
+.kmc {
+    background-color: rgba(2, 138, 131, 0.562);
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 20px;
+    border-top-left-radius: 19.5px;
+    border-top-right-radius: 19.5px;
+}
+.kmh{
+    background-color: rgb(250, 205, 4);
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 20px;
+    border-top-left-radius: 19.5px;
+    border-top-right-radius: 19.5px;
+}
+.kmu{
+    background-color: rgb(250, 135, 4);
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 20px;
+    border-top-left-radius: 19.5px;
+    border-top-right-radius: 19.5px;
+    text-align: left;
+}
+
+.p-km{
+    font-weight: 900;
+    font-size: 40px;
+    color: white;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    text-align: left;
+}
+.p-run{
+    color: white;
+    font-weight: 600;
+    text-align: left;
+}
+
+.beginner {
+    background-color: green;
+    border-radius: 10px;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    margin: 10px 0;
+    cursor: pointer;
+    width: fit-content;
+}
+.beginner:hover {
+    background-color: rgb(255, 81, 0);
+}
+
+.beginneru{
+    background-color: rgb(245, 67, 54);
+    border-radius: 10px;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    margin: 10px 0;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.beginnerh{
+    background-color: rgb(247, 79, 2);
+    border-radius: 10px;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    margin: 10px 0;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.beginnerc{
+    background-color: rgb(248, 150, 2);
+    border-radius: 10px;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    margin: 10px 0;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.minutes {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+    margin: -10px 0;
+    padding-left: 15px;
+}
+
+.p-txt, .perfect {
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.925);
+    margin-bottom: 5px;
+    font-weight: 200;
+}
+.perfect {
+    padding-left: 15px;
+}
+
+.highlight{
+    font-weight: 900;
+    margin-bottom: 0px;
+    padding-left: 15px;
+}
+
+.cup{
+    width: 15px;
+    height: 15px;
+}
+.cpl{
+    width: 15px;
+    height: 15px;
+}
+
+@media (max-width: 1260px){
+  .route-sect {
+    overflow: hidden;
+    position: relative;
+    height: 90vh;
+  }
+  .route-container {
+    animation: slide-left-center 30s linear infinite;
+    cursor: grab;
+    user-select: none;
+    will-change: transform;
+  }
+  .route-sect.pause-anim .route-container,
+  .route-sect.dragging .route-container {
+    animation-play-state: paused !important;
+    cursor: grabbing;
+    transition: transform 0.2s;
+  }
+  @keyframes slide-left-center {
+    0% { transform: translateX(50vw); }
+    100% { transform: translateX(-100vw); }
+  }
+}
